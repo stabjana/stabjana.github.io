@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+    <div id="search">
+        <h1>Car Database</h1>
+        <h2>Search Car</h2>
+
+        <div class="divForColumn">
+
+            <div class="searchForm">
+                <label for="searchLicense">License:</label>
+
+                <input type="text" name="searchLicense" id="searchLicense">
+
+                <button id="searchButton" class="searchButton" type="submit" onclick="getInputPlate()">Search</button>
+            </div>
+
+            <div id="showBox" class="showSearchRes">
+                <p id="showSearch"></p>
+                <p id="showModel"></p>
+                <p id="showOwner"></p>
+                <p id="showPrice"></p>
+                <p id="showDiscPrice"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="message"></div>
+    <main>
+        <section class="inputFormContainer">
+            <!--  <div class="form"> -->
+            <h2 class="addHeading">Add a Car</h2>
+            <form id="inputForm">
+                <div>
+                    <label for="licensePl">Licence Plate:</label>
+                    <input placeholder="Format: XX123" name="licensePl" id="licensePl" required>
+                </div><br>
+                <div>
+                    <label for="maker">Maker:</label>
+                    <input placeholder="Enter the cars makers name" type="text" name="maker" id="maker" required>
+                </div><br>
+                <div>
+                    <label for="model">Model:</label>
+                    <input placeholder="Enter the model" type="text" name="model" id="model" required>
+                </div><br>
+                <div>
+                    <label for="currOwner">Current Owner:</label>
+                    <input placeholder="Please enter the owner's name" type="text" name="currOwner" id="currOwner"
+                        required>
+                </div><br>
+                <div>
+                    <label for="price">Price:</label>
+                    <input placeholder="Enter the Price" type="number" name="price" id="price" required>
+                </div><br>
+                <div>
+                    <label for="color">Color:</label>
+                    <input placeholder="What color is the car?" type="text" name="color" id="color" required>
+                </div><br>
+
+                <div>
+                    <label for="year">Year:</label>
+                    <input placeholder="When was the car built?" type="number" name="year" id="year" required>
+                </div>
+                <button id="submitInfo" type="button" onclick="getInput()">Submit Information</button>
+
+            </form>
+            <!-- </div> -->
+            </div>
+        </section>
+
+        <section class="outputTable">
+            <table id="carsTable">
+                <thead>
+                    <tr>
+                        <th>License</th>
+                        <th>Maker</th>
+                        <th>Model</th>
+                        <th>Owner</th>
+                        <th>Price €</th>
+                        <th>Discounted Price €</th>
+                        <th>Color</th>
+                        <th>Year</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+
+
+    </main>
+
+
+    <script src=" cars.js"></script>
+</body>
+
+</html>

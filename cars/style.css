@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #59a4cd;
+    color: #333;
+}
+
+h1 {
+    margin: 1rem 0 2rem 0;
+}
+
+#search h2 {
+    margin-top: 2rem;
+    color: #333;
+}
+
+#search {
+    max-width: 90%;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px #333;
+}
+
+.divForColumn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.searchForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0.7;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.showSearchRes {
+    flex: 1;
+    margin: 1rem;
+    padding: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px #333;
+    background-color: rgb(251, 251, 251);
+    display: none;
+}
+
+.showSearchRes.visible {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    flex: 1;
+    margin: 0 20vw 10vh 10vw;
+}
+
+p {
+    margin: 0.8rem;
+}
+
+.searchForm label {
+    margin: 1rem 0;
+}
+
+.searchForm input {
+    padding: 1rem;
+    max-width: 12rem;
+}
+
+#searchButton {
+    max-width: 5rem;
+}
+
+/* 
+    Main statt inputFormContainer, ein div aus der input section rauskommentiert, dann buttons in das form mit rein
+    section output für output erstellt, um die Tabelle anzuzeigen.
+} */
+
+main {
+    display: flex;
+    gap: 2%;
+
+}
+
+.addHeading {
+    margin: 1rem 0 2rem 0;
+}
+
+.inputFormContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px #333;
+    flex-direction: column;
+    min-width: 30%;
+    max-height: fit-content;
+}
+
+label {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.5rem;
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.outputTable {
+    display: flex;
+    max-width: 90%;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px #333;
+    /* min-width: fit-content; */
+    overflow: scroll;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #b5b5b5;
+}
+
+th {
+    background-color: #59a4cd;
+    color: #ffff;
+    font-size: 1rem;
+}
+
+th:last-child {
+    min-width: 5rem;
+}
+
+td {
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #fff;
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+    /* chat GPT told me to use this when I asked about the grid (Zebra look)*/
+}
+
+button {
+    margin: 1rem 0;
+    background-color: #59a4cd;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #35b8ff;
+}
+
+.deleteBtn {
+    margin: 0;
+    text-align: left;
+    background-color: transparent;
+    color: #59a4cd;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.deleteBtn:hover {
+    background-color: transparent;
+    color: #99dcfd
+}
+
+#message {
+    margin-top: 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+}
+
+#message.success {
+    background-color: #4caf50;
+    color: white;
+    visibility: visible;
+}
+
+#message.error {
+    background-color: #f44336;
+    color: white;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    label {
+        width: 100%;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    #search {
+        text-align: center;
+    }
+
+    .divForColumn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .showSearchResult {
+        margin-top: 1rem;
+    }
+
+    .showSearchRes.visible {
+        display: block;
+        width: 100%;
+        margin: 3vh 0;
+    }
+
+    .searchButton {
+        align-self: center;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+    }
+
+    .inputFormContainer {
+        padding: 1rem;
+    }
+
+    tbody {
+        display: grid;
+        font-size: 0.8rem;
+    }
+
+    th,
+    td {
+        padding: 0.5rem;
+    }
+}
