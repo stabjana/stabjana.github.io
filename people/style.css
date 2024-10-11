@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkcolor: #0B192C;
+    --secondcolor: #2a5484;
+    --higlightcolor1: #FF6500;
+    --highlight2: #54a4ff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: var(--darkcolor);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: var(--secondcolor);
+    color: var(--highlight2);
+    width: fit-content;
+    padding: 2rem 4rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 7px var(--higlightcolor1);
+    text-align: center;
+    transition: transform 0.5s, 2s 0.1s;
+}
+
+header:hover {
+    transform: rotate(360deg);
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    max-width: fit-content;
+}
+
+.card img {
+    width: 55%;
+    object-fit: contain;
+}
+
+.card {
+    padding: 20px 0;
+    margin: auto;
+    background-color: var(--secondcolor);
+    color: var(--highlight2);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px var(--higlightcolor1);
+    text-align: center;
+    line-height: 2rem;
+    height: auto;
+
+    transition: transform 0.5s, 0.5s 0s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:1325px) {
+    header {
+        font-size: 0.9rem;
+        width: fit-content;
+    }
+}
+
+@media (max-width:952px) {
+    header {
+        width: fit-content;
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width:800px) {
+
+    header {
+
+        margin: auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 5px var(--higlightcolor1);
+        font-size: 0.6rem;
+    }
+
+    #card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: fit-content;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (max-width:375px) {
+
+    header {
+
+        width: 60%;
+        padding: 1rem 2rem;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 5px var(--higlightcolor1);
+        font-size: 0.5rem;
+    }
+
+    #card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: fit-content;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+
+}
