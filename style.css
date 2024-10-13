@@ -1,0 +1,86 @@
+:root {
+    --font: Oswald, sans-serif;
+    --dark-blue: #202758;
+    --light-blue: #6a72a7;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    font-size: 0.9rem;
+    background: var(--dark-blue);
+}
+
+a {
+    text-decoration: none;
+    padding: 1rem;
+    color: var(--dark-blue);
+}
+
+a:hover {
+    color: #5762aba8;
+}
+
+
+#welcome {
+    background: var(--light-blue);
+    color: var(--dark-blue);
+    padding: 1rem 0;
+    text-align: center;
+    padding: 5rem;
+    background: white;
+    margin: 1rem 0;
+    padding: 2rem;
+    display: flex;
+    box-shadow: 2px 2px 5px #333;
+    max-width: fit-content;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+#welcome img {
+    max-width: 300px;
+    margin: 0 1rem;
+    object-fit: contain;
+    align-self: flex-start;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #333;
+}
+
+#welcome h1 {
+    margin-bottom: 1rem;
+}
+
+.card {
+    background: var(--dark-blue);
+    margin: 1rem 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 150px;
+    max-width: 350px;
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.card h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer {
+    display: flex;
+    min-height: 100px;
+}
