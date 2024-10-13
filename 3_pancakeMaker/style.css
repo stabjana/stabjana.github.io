@@ -1,0 +1,200 @@
+:root {
+  --logoColor: #88450b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Aleo, Impact;
+  background-color: #fff8f0;
+  color: #5a4a42;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  color: var(--neutral-col2);
+  min-height: 100vh;
+  background: url(pancake_pics/top-view-plate-hands-white-cup-tea-with-cinnamon-sticks-bowls-jam-plate-pancakes-pomegranate-hands-table.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Aleo, Impact;
+}
+
+header img {
+  max-width: 250px;
+  max-height: 55px;
+  margin: 2rem;
+}
+
+header h1 {
+  margin-top: 35vh;
+  color: var(--logoColor);
+  border-radius: 10px;
+  text-align: center;
+  font-weight: light;
+  font-style: italic;
+  text-shadow: 0px 0px 1px #ffd7c0;
+}
+
+.orderNowButton {
+  padding: 1rem 1.5rem;
+  background-color: #854e2f;
+  color: #fff8f0;
+  border-radius: 5px;
+  margin: 2rem auto auto auto;
+  box-shadow: 0 4px 8px #fff8f0;
+  border: none;
+  font-family: Aleo, Impact;
+  transition: transform 0.5s, 0.5s 0s;
+}
+
+.orderNowButton:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem auto 2rem auto;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-radius: 5px;
+  /* margin: 5rem 0 5rem 5rem; */
+  box-shadow: 2px 2px 5px 5px #854e2f;
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  padding: 2rem 2rem 2rem 4rem;
+}
+
+.image-container img {
+  align-self: center;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+  flex: 1;
+  padding: 2rem;
+}
+
+.price-banner {
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  transform: translateX(-50%);
+  background-color: #d17b49;
+  color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#totalPrice {
+  transition: background-color 0.2s ease;
+}
+
+.textGlow {
+  box-shadow: 0 0 20px #6e320f;
+  background-color: #6e320f;
+  border-radius: 100px;
+  padding: 1rem;
+}
+
+
+.customization-section,
+.deliveryOption {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+#name {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: solid #6e320f;
+}
+
+.price-display {
+  margin: 1rem 0;
+}
+
+.submit,
+.detailsButton,
+.close {
+  padding: 0.6rem 1.2rem;
+  background-color: #854e2f;
+  color: #fff8f0;
+  border-radius: 5px;
+  margin: auto;
+  box-shadow: 0 4px 8px #fff8f0;
+  border: none;
+  font-family: Aleo, Impact;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6e320f;
+}
+
+#content {
+  font-size: larger;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay.visible {
+  display: flex;
+}
+
+.modal {
+  background-color: #fff8f0;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+  padding: 2rem;
+  width: 35vw;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+#orderName,
+#orderBase,
+#orderTopp,
+#orderExtra,
+#orderDelivery,
+#orderPrice {
+  margin: 1rem 0;
+}
