@@ -224,6 +224,10 @@ button:hover {
   }
 }
 
+.detailsButton {
+  margin-bottom: 1rem;
+}
+
 .modal {
   border-radius: 0px;
   width: 100vw;
