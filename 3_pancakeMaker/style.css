@@ -222,16 +222,12 @@ button:hover {
     height: 80px;
     font-size: 16px;
   }
-}
 
-.detailsButton {
-  margin-bottom: 1rem;
-}
-
-.modal {
-  border-radius: 0px;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  .modal {
+    border-radius: 0px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
