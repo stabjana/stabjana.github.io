@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio S. Jana</title>
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/svg+xml" href="Portfolio_pics/Logo_without_font.svg">
+    <link rel="icon" type="image/png" href="Portfolio_pics/Logo_without_font.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="name-nav">
+            <a href="~/"><img src="Portfolio_pics/Logo_with_font_dark.svg" alt="Logo: Stefanie Jana"></a>
+            <!-- <nav>-->
+            <nav class="menu">
+                <button class="mobileMenu">menu</button>
+                <ul>
+                    <li><a href="~/#projects">Projects</a></li>
+                    <li><a href="~/#aboutme">About me</a></li>
+                    <li><a href="~/#skills">Skills</a></li>
+                    <li><a href="~/#">Gallery</a></li>
+                    <li><a href="~/#contact">Contact me</a></li>
+                    <li><a href="https://www.bc.fi/" target="_blank">BCH</a></li>
+                </ul>
+            </nav>
+            <!-- </nav>-->
+        </div>
+    </header>
+
+
+
+    <div class="gallH2">
+        <h2>Gallery</h2>
+    </div>
+    <div class="gallery">
+        <div id="content1"></div>
+        <div id="content2"></div>
+        <div id="content3"></div>
+        <div id="content4"></div>
+        <div id="content5"></div>
+        <div id="content6"></div>
+        <div id="content7"></div>
+        <div id="content8"></div>
+        <div id="content9"></div>
+
+    </div>
+    <div class="copyImg">Pictures &copy; https://images.nasa.gov/</div>
+    <!-- footer area -->
+    <footer>
+        <div class="contactForm" id="contact">
+            <h1>Contact me</h1>
+            <form id="contactMe">
+                <div>
+                    <label for="yourname">Your name</label>
+                    <input type="text" name="yourname" id="yourname">
+                </div><br>
+                <div class="label">
+                    <label for="email">Your Email</label>
+                    <input type="email" name="email" id="email">
+                </div><br>
+                <div class="label">
+                    <label for="message">Message me</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+            </form>
+            <button id="sendBtn" class="sendButton topAnimation" type="submit" onclick="clearInput()">Send</button>
+        </div>
+
+        <div class="footerRight">
+            <div class="socialMedia">
+                <h3>Visit my pages on</h3>
+
+
+                <a href="https://github.com/stabjana" target="_blank"> <i class="fa fa-github"
+                        style="font-size: 4em;"></i></a><br>
+
+                <a href="https://www.linkedin.com/in/stefanie-jana-a0b094a8/" target="_blank">
+                    <i class="fa fa-linkedin" style="font-size: 4em;"></i></a>
+
+            </div>
+
+            <div class="copyright">
+                <p>&copy Steffi Jana 2024</p>
+            </div>
+            <button id="backTop">Back to top</button>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
