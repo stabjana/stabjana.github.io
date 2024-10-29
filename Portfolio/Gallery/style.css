@@ -159,7 +159,7 @@ button {
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background: url(/Gallery/gallery-pics/GSFC_20171208_Archive_e000383~medium.jpg);
+    background: url(/Portfolio/Gallery/gallery-pics/GSFC_20171208_Archive_e000383~medium.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -171,7 +171,7 @@ button {
     padding-top: var(--main-padding);
     object-fit: cover;
     max-height: none;
-    background: url(/Gallery/gallery-pics/PIA21390~orig_long.jpg);
+    background: url(/Portfolio/Gallery/gallery-pics/PIA21390~orig_long.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -181,7 +181,7 @@ button {
     grid-area: content3;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background: url(/Gallery/gallery-pics/PIA00342~medium_long.jpg);
+    background: url(/Portfolio/Gallery/gallery-pics/PIA00342~medium_long.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -191,7 +191,7 @@ button {
     grid-area: content4;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background: url(/Gallery/gallery-pics/PIA21073~medium-long.jpg);
+    background: url(/Portfolio/Gallery/gallery-pics/PIA21073~medium-long.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -201,7 +201,7 @@ button {
     grid-area: content5;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background: url(/Gallery/gallery-pics/PIA18033~medium.jpg);
+    background: url(/Portfolio/Gallery/gallery-pics/PIA18033~medium.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -211,7 +211,7 @@ button {
     grid-area: content6;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background: url(/Gallery/gallery-pics/PIA26077~medium.jpg);
+    background: url(/Portfolio/Gallery/gallery-pics/PIA26077~medium.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -221,7 +221,7 @@ button {
     grid-area: content7;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background: url(/Gallery/gallery-pics/GRC-2024-C-02645~medium.jpg);
+    background: url(/Portfolio/Gallery/gallery-pics/GRC-2024-C-02645~medium.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -231,7 +231,7 @@ button {
     grid-area: content8;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background: url(/Gallery/gallery-pics/hubble-observes-one-of-a-kind-star-nicknamed-nasty_17754652960_o~medium.jpg);
+    background: url(/Portfolio/Gallery/gallery-pics/hubble-observes-one-of-a-kind-star-nicknamed-nasty_17754652960_o~medium.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -241,7 +241,7 @@ button {
     grid-area: content9;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background: url(/Gallery/gallery-pics/PIA04921~medium.jpg);
+    background: url(/Portfolio/Gallery/gallery-pics/PIA04921~medium.jpg);
     background-size: cover;
     background-position: center;
 }
