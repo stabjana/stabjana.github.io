@@ -249,8 +249,7 @@ button {
 footer {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 18vw;
-    margin-bottom: 7vh;
+    margin: 7vh 18vw;
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 0 10px var(--shadow-col);
