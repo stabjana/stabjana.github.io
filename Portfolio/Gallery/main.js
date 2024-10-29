@@ -46,8 +46,6 @@ function scrollFunction() {
 
     }
 }
-// to open links in new tab
-window.open($(this).attr("href"), '_blank', 'modal=yes');
 
 // clear input when send
 const btn = document.querySelector('#sendBtn');

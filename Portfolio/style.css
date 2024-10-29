@@ -55,11 +55,15 @@ nav {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 3vh;
+    padding: 2vh;
     background-color: transparent;
     width: 100%;
     position: fixed;
     z-index: 3;
+}
+
+.name-nav>img {
+    cursor: pointer;
 }
 
 .mobileMenu {
@@ -74,7 +78,7 @@ ul {
 }
 
 a {
-    margin: 1rem 1rem;
+    margin: 1vh 1vw;
     text-decoration: none;
     color: var(--neutral-col2);
     font-weight: lighter;
@@ -82,13 +86,6 @@ a {
 
 a:hover {
     color: var(--secondary-col2);
-}
-
-#projects,
-#aboutme,
-#skills,
-#contact {
-    scroll-margin-top: 5rem;
 }
 
 button {
@@ -185,8 +182,8 @@ main {
 section {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 6rem;
-    padding: 2rem;
+    margin: 0 6vw;
+    padding: 2vw;
     font-weight: 100;
 }
 
@@ -203,8 +200,8 @@ section h2 {
 }
 
 .projects {
-    margin-bottom: 5rem;
-    margin-top: 5rem;
+    margin-bottom: 7vh;
+    margin-top: 7vh;
 }
 
 .hL2 h2::after {
@@ -227,7 +224,7 @@ section h2 {
     justify-content: center;
     width: 100%;
     min-height: 30vh;
-    gap: 3rem;
+    gap: 3vw;
     justify-content: space-evenly;
     width: 100%;
 }
@@ -245,7 +242,7 @@ section h2 {
     margin: 1rem;
     padding: 1rem;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     flex: 1 1 30%;
     transition: transform 0.5s, 0.5s 0s;
 }
@@ -299,8 +296,8 @@ section h2 {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
+    margin-bottom: 7vh;
+    margin-top: 7vh;
     flex-wrap: wrap;
 }
 
@@ -308,7 +305,7 @@ section h2 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 3rem;
+    gap: 4vw;
 }
 
 .skillCard {
@@ -323,7 +320,7 @@ section h2 {
     max-width: 350px;
     margin: 1rem;
     padding: 3rem 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     flex: 1 1 30%;
     transition: transform 0.5s, 0.5s 0s;
 }
@@ -333,7 +330,7 @@ section h2 {
     height: fit-content;
     max-height: 300px;
     border-radius: 5px;
-
+    margin-bottom: 1.5rem;
 }
 
 .skillCard:hover {
@@ -382,8 +379,8 @@ section h2 {
 footer {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 12rem;
-    margin-bottom: 3rem;
+    margin: 0 18vw;
+    margin-bottom: 7vh;
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 0 10px var(--shadow-col);
@@ -446,8 +443,8 @@ textarea {
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
-    margin: 2rem 0;
-    padding: 1rem;
+    margin: 4vh 0;
+    padding: 2vw;
 }
 
 .socialMedia h3 {
@@ -473,13 +470,6 @@ textarea {
     margin-top: 2rem;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-div {
-    scroll-margin-top: 150px;
-}
 
 #backTop {
     border: none;
@@ -494,6 +484,23 @@ div {
 #backTop:active {
     background: #278c9c;
     bottom: 1.7rem;
+}
+
+#contact,
+#aboutMe {
+    scroll-margin-top: 4rem;
+}
+
+#projects {
+    scroll-margin-top: 6.5rem;
+}
+
+#skills {
+    scroll-margin-top: 8.5rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* media query to iphone und ipad */
@@ -528,15 +535,15 @@ div {
         background-color: var(--primary-col1);
         color: var(--neutral-col2);
         position: absolute;
-        left: 52%;
+        left: 58%;
         top: 21%;
         width: fit-content;
-        padding: 1rem;
+        padding: 1vw;
     }
 
     ul.responsive li {
         display: block;
-        margin: 2rem;
+        margin: 4vw;
     }
 
     .bubbles span {
@@ -548,7 +555,7 @@ div {
     section {
         justify-content: space-evenly;
         flex-direction: column;
-        margin: 1rem 6rem;
+        margin: 2vh 6vw;
     }
 
     .aboutMe p {
@@ -556,10 +563,10 @@ div {
     }
 
     .aboutMe img {
-        margin: 0 1rem;
+        margin: 0 2vw;
         width: 20vw;
         height: fit-content;
-        margin-top: 2rem;
+        margin-top: 4vw;
     }
 
     .cardBox,
@@ -605,7 +612,7 @@ div {
     }
 
     .card {
-        margin: 2rem 0;
+        margin: 8vh 14vw;
         max-width: 100%;
     }
 
@@ -652,28 +659,33 @@ div {
     }
 
     nav ul.responsive {
-        position: inherit;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        align-items: flex-start;
-    }
-
-    nav {
-        position: inherit;
+        position: absolute;
+        left: 45%;
+        top: 22.5%;
+        width: fit-content;
+        padding: 1vw;
     }
 
     .mobileMenu {
         position: sticky;
     }
 
+    .name-nav img {
+        max-width: 40vw;
+        height: auto;
+    }
+
     a {
         margin: 0.4rem 0.2rem;
     }
 
+    .hL2:hover h2::after {
+        width: 40%;
+    }
+
     section {
-        margin: 1rem 0;
-        padding: 1.2rem;
+        margin: 1vh 0;
+        padding: 1.2vw;
     }
 
     .projects,
@@ -694,10 +706,11 @@ div {
 
     .aboutMe img {
         margin: 0;
-        width: 30vw;
+        width: 40vw;
         height: fit-content;
-        margin-top: 2rem;
-        align-self: flex-start;
+        margin-top: 4vh;
+        align-self: center;
+        border-radius: 50%;
     }
 
     footer {
@@ -715,9 +728,5 @@ div {
         margin: 0;
         padding: 0;
         align-items: center;
-    }
-
-    .hL2:hover h2::after {
-        width: 35%;
     }
 }
